@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone_sword"
+        },
+        "B": {
+            "item": "minecraft:beef"
+        }
+    },
+    "result": {
+        "item": "sm:beef_chunk",
+        "count": 4
+    }
+}
