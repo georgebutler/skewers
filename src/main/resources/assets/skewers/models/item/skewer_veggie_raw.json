@@ -1,0 +1,7 @@
+{
+   "parent": "item/generated",
+   "textures": {
+       "layer0": "skewers:items/skewer_none",
+       "layer1": "skewers:items/skewer_veggie_raw"
+   }
+}

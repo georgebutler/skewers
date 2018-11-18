@@ -1,6 +1,7 @@
 package casadis.skewers;
 
 import casadis.skewers.util.Reference;
+import casadis.skewers.init.ModOreDict;
 import casadis.skewers.init.ModRecipes;
 import casadis.skewers.proxy.CommonProxy;
 
@@ -22,7 +23,7 @@ public class Main {
 	
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
-		
+		ModOreDict.init();
 	}
 	
 	@EventHandler

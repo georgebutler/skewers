@@ -17,6 +17,15 @@ public class ModItems {
 	public static final Item SKEWER_PORKCHOP_RAW = new ItemSkewer("skewer_porkchop_raw", 3, 0.6f, true, false);
 	public static final Item SKEWER_PORKCHOP_COOKED = new ItemSkewer("skewer_porkchop_cooked", 8, 12.8f, true, true);
 	
+	public static final Item SKEWER_COD_RAW = new ItemSkewer("skewer_cod_raw", 4, 2.4f, false, false);
+	public static final Item SKEWER_COD_COOKED = new ItemSkewer("skewer_cod_cooked", 8, 12.8f, true, true);
+	
+	public static final Item SKEWER_SALMON_RAW = new ItemSkewer("skewer_salmon_raw", 4, 2.4f, false, false);
+	public static final Item SKEWER_SALMON_COOKED = new ItemSkewer("skewer_salmon_cooked", 8, 12.8f, true, true);
+	
+	public static final Item SKEWER_VEGGIE_RAW = new ItemSkewer("skewer_veggie_raw", 4, 2.4f, false, false);
+	public static final Item SKEWER_VEGGIE_COOKED = new ItemSkewer("skewer_veggie_cooked", 8, 12.8f, true, true);
+	
 	public static final Item SKEWER_CARAMEL_APPLE = new ItemSkewer("skewer_caramel_apple", 4, 2.4f, false, true);
 	
 	// Crafting Ingredients
