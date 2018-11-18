@@ -7,10 +7,12 @@
     ],
     "key": {
         "*": {
-            "item": "skewers:caramel"
+            "type": "forge:ore_dict",
+            "ore": "foodCaramel"
         },
         "#": {
-            "item": "minecraft:apple"
+            "type": "forge:ore_dict",
+            "ore": "cropApple"
         },
         "/": {
             "type": "forge:ore_dict",

@@ -7,10 +7,12 @@
     ],
     "key": {
         "*": {
-            "item": "minecraft:carrot"
+            "type": "forge:ore_dict",
+            "ore": "cropCarrot"
         },
         "#": {
-            "item": "minecraft:potato"
+            "type": "forge:ore_dict",
+            "ore": "cropPotato"
         },
         "/": {
             "type": "forge:ore_dict",

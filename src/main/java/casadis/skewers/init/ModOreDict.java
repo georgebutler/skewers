@@ -1,10 +1,19 @@
 package casadis.skewers.init;
 
 import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class ModOreDict {
 	// Dictionary names taken from Pam's HarvestCraft
+	
+	public static final String cropApple="cropApple";
+    public static final String cropCarrot="cropCarrot";
+    public static final String cropPotato="cropPotato";
+	
+	public static final String listAllfishraw="listAllfishraw";
+	public static final String listAllfishcooked="listAllfishcooked";
+	public static final String salmonRaw="salmonRaw";
 	
     public static final String listAllchickenraw="listAllchickenraw";
     public static final String listAllchickencooked="listAllchickencooked";
@@ -17,7 +26,15 @@ public class ModOreDict {
     public static final String listAllrabbitraw="listAllrabbitraw";
     public static final String listAllrabbitcooked="listAllrabbitcooked";
     
+    public static final String foodCaramel = "foodCaramel";
+    
 	public static void init() {
+		OreDictionary.registerOre(cropApple, Items.APPLE);
+        OreDictionary.registerOre(cropCarrot, Items.CARROT);
+        OreDictionary.registerOre(cropPotato, Items.POTATO);
+		
+		OreDictionary.registerOre(listAllfishraw, new ItemStack(Items.FISH, 1, OreDictionary.WILDCARD_VALUE));
+		
         OreDictionary.registerOre(listAllchickenraw, Items.CHICKEN);
         OreDictionary.registerOre(listAllchickencooked, Items.COOKED_CHICKEN);
         OreDictionary.registerOre(listAllporkraw, Items.PORKCHOP);
@@ -27,6 +44,7 @@ public class ModOreDict {
         OreDictionary.registerOre(listAllmuttonraw, Items.MUTTON);
         OreDictionary.registerOre(listAllmuttoncooked, Items.COOKED_MUTTON);
         OreDictionary.registerOre(listAllrabbitraw, Items.RABBIT);
-        OreDictionary.registerOre(listAllrabbitcooked, Items.COOKED_RABBIT);
+        
+        OreDictionary.registerOre(foodCaramel, ModItems.CARAMEL);
 	}
 }
