@@ -1,6 +1,7 @@
 package casadis.skewers;
 
 import casadis.skewers.util.Reference;
+import casadis.skewers.init.ModRecipes;
 import casadis.skewers.proxy.CommonProxy;
 
 import net.minecraftforge.fml.common.Mod;
@@ -26,7 +27,7 @@ public class Main {
 	
 	@EventHandler
 	public static void init(FMLInitializationEvent event) {
-		
+		ModRecipes.init();
 	}
 	
 	@EventHandler

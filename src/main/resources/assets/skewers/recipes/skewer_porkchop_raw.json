@@ -7,7 +7,7 @@
     ],
     "key": {
         "#": {
-            "item": "sm:beef_chunk"
+            "item": "minecraft:porkchop"
         },
         "/": {
             "type": "forge:ore_dict",
@@ -15,7 +15,7 @@
         }
     },
     "result": {
-        "item": "minecraft:gold_ingot",
+        "item": "skewers:skewer_porkchop_raw",
         "count": 1
     }
 }
