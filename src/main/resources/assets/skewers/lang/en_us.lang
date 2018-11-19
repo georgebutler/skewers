@@ -17,6 +17,15 @@ item.skewer_salmon_cooked.name=Cooked Salmon Skewer
 item.skewer_veggie_raw.name=Veggie Skewer
 item.skewer_veggie_cooked.name=Roasted Veggie Skewer
 
+item.skewer_chicken_raw.name=Raw Chicken Skewer
+item.skewer_chicken_cooked.name=Cooked Chicken Skewer
+
+item.skewer_rabbit_raw.name=Raw Rabbit Skewer
+item.skewer_rabbit_cooked.name=Cooked Rabbit Skewer
+
+item.skewer_mutton_raw.name=Raw Mutton Skewer
+item.skewer_mutton_cooked.name=Cooked Mutton Skewer
+
 item.skewer_caramel_apple.name=Caramel Apple
 
 

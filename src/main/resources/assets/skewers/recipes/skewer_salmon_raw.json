@@ -8,8 +8,7 @@
     "key": {
         "#": {
             "type": "forge:ore_dict",
-            "ore": "listAllfishraw",
-            "data": 1
+            "ore": "salmonRaw"
         },
         "/": {
             "type": "forge:ore_dict",

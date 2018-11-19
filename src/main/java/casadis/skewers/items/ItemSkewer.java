@@ -34,7 +34,12 @@ public class ItemSkewer extends ItemFood implements IHasModel {
 	
 	protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
 		if (!worldIn.isRemote && !this.isCooked) {
-            player.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 1));
+			double sickChance = (int)(Math.random() * ((80 - 0) + 1)) + 0;
+			
+			if (sickChance <= 80) {
+				player.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 1));
+				player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 600, 1));
+			}
 		}
 		
 		super.onFoodEaten(stack, worldIn, player);
