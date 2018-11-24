@@ -12,9 +12,9 @@ public class ConfigHandler {
 	
 	private static final String CATEGORY_GENERAL = "general";
 	
-	public static int SKEWER_HUNGER_MULTIPLIER = 3;
-	public static int SKEWER_SATURATION_MULTIPLIER = 3;
-	public static int SICK_CHANCE = 80;
+	public static int SKEWER_HUNGER_MULTIPLIER;
+	public static float SKEWER_SATURATION_MULTIPLIER;
+	public static int SICK_CHANCE;
 	
     public ConfigHandler(Configuration config) {
         this.config = config;
@@ -28,7 +28,7 @@ public class ConfigHandler {
 		config.addCustomCategoryComment(CATEGORY_GENERAL, "General Settings");
 		
 		SKEWER_HUNGER_MULTIPLIER = config.getInt("HungerMultiplier", CATEGORY_GENERAL, 3, 1, 6, "How much will the normal hunger satisfaction be multiplied?");
-		SKEWER_SATURATION_MULTIPLIER = config.getInt("SaturationMultiplier", CATEGORY_GENERAL, 3, 1, 6, "How much will the normal saturation satisfaction be multiplied?");
+		SKEWER_SATURATION_MULTIPLIER = config.getFloat("SaturationMultiplier", CATEGORY_GENERAL, 1.0f, 1.0f, 2.0f, "How much will the normal saturation satisfaction be multiplied?");
 		SICK_CHANCE = config.getInt("SickChance", CATEGORY_GENERAL, 80, 0, 100, "How often should eating a raw skewer make the player sick?");
 		
 		config.save();
