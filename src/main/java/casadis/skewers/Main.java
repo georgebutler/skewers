@@ -1,10 +1,14 @@
 package casadis.skewers;
 
 import casadis.skewers.util.Reference;
-import casadis.skewers.init.ModOreDict;
+import casadis.skewers.util.handlers.ConfigHandler;
+import casadis.skewers.util.handlers.OreDictHandler;
+
+import java.io.File;
+
 import casadis.skewers.init.ModRecipes;
 import casadis.skewers.proxy.CommonProxy;
-
+import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -15,6 +19,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class Main {
+	public static ConfigHandler config;
+	
 	@Instance
 	public static Main instance;
 	
@@ -23,7 +29,9 @@ public class Main {
 	
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
-		ModOreDict.init();
+		config = new ConfigHandler(new Configuration(event.getSuggestedConfigurationFile()));
+		
+		OreDictHandler.init();
 	}
 	
 	@EventHandler

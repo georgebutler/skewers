@@ -7,7 +7,7 @@ import com.google.common.collect.Maps;
 import casadis.skewers.Main;
 import casadis.skewers.init.ModItems;
 import casadis.skewers.util.IHasModel;
-
+import casadis.skewers.util.handlers.ConfigHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -21,7 +21,7 @@ public class ItemSkewer extends ItemFood implements IHasModel {
 	private boolean isCooked;
 	
 	public ItemSkewer(String name, int amount, float saturation, boolean isWolfFood, boolean isCooked) {
-		super(amount, saturation, isWolfFood);
+		super(amount * ConfigHandler.SKEWER_HUNGER_MULTIPLIER, saturation * ConfigHandler.SKEWER_SATURATION_MULTIPLIER, isWolfFood);
 		
 		this.isCooked = isCooked;
 		
@@ -34,9 +34,9 @@ public class ItemSkewer extends ItemFood implements IHasModel {
 	
 	protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
 		if (!worldIn.isRemote && !this.isCooked) {
-			double sickChance = (int)(Math.random() * ((80 - 0) + 1)) + 0;
+			double sickChance = (int)(Math.random() * ((ConfigHandler.SICK_CHANCE - 0) + 1)) + 0;
 			
-			if (sickChance <= 80) {
+			if (sickChance <= ConfigHandler.SICK_CHANCE) {
 				player.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 1));
 				player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 600, 1));
 			}
