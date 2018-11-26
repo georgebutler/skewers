@@ -18,5 +18,11 @@
     "result": {
         "item": "skewers:skewer_beef_raw",
         "count": 1
+    },
+    "conditions": [
+    {
+      "type": "skewers:BeefEnabled",
+      "value": true
     }
+  ]
 }

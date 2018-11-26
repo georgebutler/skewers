@@ -5,6 +5,7 @@ import casadis.skewers.util.handlers.ConfigHandler;
 import casadis.skewers.util.handlers.OreDictHandler;
 
 import java.io.File;
+import org.apache.logging.log4j.Logger;
 
 import casadis.skewers.init.ModRecipes;
 import casadis.skewers.proxy.CommonProxy;
@@ -23,6 +24,7 @@ public class Main {
 	
 	@Instance
 	public static Main instance;
+	public static Logger logger;
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
 	public static CommonProxy proxy;

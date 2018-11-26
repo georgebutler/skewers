@@ -1,0 +1,6 @@
+{
+  "conditions": {
+    "BeefEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
+    "PorkEnabled": "casadis.skewers.conditions.SkewerConditionFactory"
+  }
+}
