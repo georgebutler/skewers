@@ -17,9 +17,9 @@ This mod adds a bunch of different Skewers you can craft and eat. Skewers allows
 - Cookie Skewer
 - & Caramel Apple + Caramel Item
 
-## Tips
+### Tips
 
-Caramel can be made by smelting sugar in a furnace.
+- Caramel can be made by smelting sugar in a furnace.
 
 ### Misc Details
 
