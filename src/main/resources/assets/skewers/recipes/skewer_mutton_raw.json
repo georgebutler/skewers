@@ -18,5 +18,11 @@
     "result": {
         "item": "skewers:skewer_mutton_raw",
         "count": 1
+    },
+    "conditions": [
+    {
+      "type": "skewers:MuttonEnabled",
+      "value": true
     }
+  ]
 }

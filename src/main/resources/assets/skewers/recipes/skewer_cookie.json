@@ -18,5 +18,11 @@
     "result": {
         "item": "skewers:skewer_cookie",
         "count": 1
+    },
+    "conditions": [
+    {
+      "type": "skewers:CookieEnabled",
+      "value": true
     }
+  ]
 }

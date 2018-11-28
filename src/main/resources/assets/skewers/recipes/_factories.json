@@ -1,6 +1,15 @@
 {
   "conditions": {
     "BeefEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
-    "PorkEnabled": "casadis.skewers.conditions.SkewerConditionFactory"
+    "PorkEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
+    "CodEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
+    "SalmonEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
+    "VeggieEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
+    "ChickenEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
+    "RabbitEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
+    "MuttonEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
+    "CookieEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
+    "AppleEnabled": "casadis.skewers.conditions.SkewerConditionFactory",
+    "CaramelEnabled": "casadis.skewers.conditions.SkewerConditionFactory"
   }
 }

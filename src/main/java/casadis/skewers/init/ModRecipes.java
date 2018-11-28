@@ -1,5 +1,6 @@
 package casadis.skewers.init;
 
+import casadis.skewers.util.handlers.ConfigHandler;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -17,6 +18,8 @@ public class ModRecipes {
 		GameRegistry.addSmelting(ModItems.SKEWER_MUTTON_RAW, new ItemStack(ModItems.SKEWER_MUTTON_COOKED, 1),  1f);
 		
 		// Crafting Ingredients
-		GameRegistry.addSmelting(Items.SUGAR, new ItemStack(ModItems.CARAMEL, 1),  0.5f);
+		if (ConfigHandler.ENABLE_CARAMEL) {
+			GameRegistry.addSmelting(Items.SUGAR, new ItemStack(ModItems.CARAMEL, 1),  0.5f);
+		}
 	}
 }

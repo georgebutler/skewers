@@ -22,5 +22,11 @@
     "result": {
         "item": "skewers:skewer_caramel_apple",
         "count": 1
+    },
+    "conditions": [
+    {
+      "type": "skewers:AppleEnabled",
+      "value": true
     }
+  ]
 }

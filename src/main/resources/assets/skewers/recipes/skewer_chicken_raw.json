@@ -18,5 +18,11 @@
     "result": {
         "item": "skewers:skewer_chicken_raw",
         "count": 1
+    },
+    "conditions": [
+    {
+      "type": "skewers:ChickenEnabled",
+      "value": true
     }
+  ]
 }

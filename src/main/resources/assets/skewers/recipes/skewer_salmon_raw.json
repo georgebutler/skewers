@@ -18,5 +18,11 @@
     "result": {
         "item": "skewers:skewer_salmon_raw",
         "count": 1
+    },
+    "conditions": [
+    {
+      "type": "skewers:SalmonEnabled",
+      "value": true
     }
+  ]
 }

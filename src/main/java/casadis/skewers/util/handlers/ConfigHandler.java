@@ -23,6 +23,7 @@ public class ConfigHandler {
 	public static boolean ENABLE_SKEWER_CHICKEN;
 	public static boolean ENABLE_SKEWER_RABBIT;
 	public static boolean ENABLE_SKEWER_MUTTON;
+	public static boolean ENABLE_SKEWER_COOKIE;
 	public static boolean ENABLE_SKEWER_APPLE;
 	public static boolean ENABLE_CARAMEL;
 	
@@ -58,6 +59,7 @@ public class ConfigHandler {
 		ENABLE_SKEWER_CHICKEN = config.getBoolean("ChickenEnabled", CATEGORY_ENABLED, true, "Should the Chicken Skewer be craftable?");
 		ENABLE_SKEWER_RABBIT = config.getBoolean("RabbitEnabled", CATEGORY_ENABLED, true, "Should the Rabbit Skewer be craftable?");
 		ENABLE_SKEWER_MUTTON = config.getBoolean("MuttonEnabled", CATEGORY_ENABLED, true, "Should the Mutton Skewer be craftable?");
+		ENABLE_SKEWER_COOKIE = config.getBoolean("CookieEnabled", CATEGORY_ENABLED, true, "Should the Cookie Skewer be craftable?");
 		ENABLE_SKEWER_APPLE = config.getBoolean("AppleEnabled", CATEGORY_ENABLED, true, "Should the Caramel Apple be craftable?");
 		ENABLE_CARAMEL = config.getBoolean("CaramelEnabled", CATEGORY_ENABLED, true, "Should Caramel be craftable?");
     }
